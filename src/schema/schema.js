@@ -7,7 +7,7 @@ const schema = buildSchema(`
     description: String
   }
   type Query {
-    getById(id: ID!): [Product]
+    getById(id: ID!): Product
     get: [Product]
   }
   type Mutation {

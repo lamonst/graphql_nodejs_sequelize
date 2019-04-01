@@ -7,6 +7,7 @@ const productResolver =  {
         return result;
     },
     async get (){
+        console.log("Query resolver get");
         return await productRepository.get();
     },
     async createProduct({title, description}){

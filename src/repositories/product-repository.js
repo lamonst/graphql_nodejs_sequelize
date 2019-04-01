@@ -2,7 +2,8 @@
 
 const Product = require('../../app/models/product');
  
-exports.get = async () => {    
+exports.get = async () => {
+    console.log("Query get");
     return await Product.findAll();
 }
 
