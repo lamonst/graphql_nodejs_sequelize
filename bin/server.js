@@ -4,8 +4,6 @@ const http = require('http');
 // const app = require('./src/app.graphql')
 const app = require('../src/app')
 
-    //const { Product } = require('./app/models/index');
-
 const server = http.createServer(app);
 
 const port = 8081;

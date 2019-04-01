@@ -16,8 +16,9 @@ app.use(bodyParser.urlencoded({
 
 //Declara rotas
 const indexRoute = require('./routes/index-route');
-// const productRouter = require('./routes/product-route')
+const productRouter = require('./routes/product-route')
 
 app.use('/', indexRoute);
+app.use('/node', productRouter);
 
 module.exports = app;
